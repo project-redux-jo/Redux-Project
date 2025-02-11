@@ -7,33 +7,33 @@ import {
   onAuthStateChanged,
   GoogleAuthProvider, 
   signInWithPopup, 
+ 
 } from "firebase/auth";
 import { getDatabase, ref, set, get, push, remove ,update, onValue} from "firebase/database";
 
 // تكوين Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyDFFO5mpXml-jE3i6qcEXd3VSAFmMSkUMo",
-  authDomain: "reactprojectteam.firebaseapp.com",
-  databaseURL: "https://reactprojectteam-default-rtdb.firebaseio.com",
-  projectId: "reactprojectteam",
-  storageBucket: "reactprojectteam.firebasestorage.app",
-  messagingSenderId: "84862365122",
-  appId: "1:84862365122:web:7b81895080bd88a19dfa5b",
-  measurementId: "G-K7QKHY9TL7",
-};
-
+    apiKey: "AIzaSyDdc7ua3VJ_jcLhlhsYR1F3LsV4bHs_G9g",
+    authDomain: "redux-project-791e5.firebaseapp.com",
+    databaseURL: "https://redux-project-791e5-default-rtdb.firebaseio.com",
+    projectId: "redux-project-791e5",
+    storageBucket: "redux-project-791e5.firebasestorage.app",
+    messagingSenderId: "530648960770",
+    appId: "1:530648960770:web:136ec5a57a82352f80bc1b"
+  };
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const database = getDatabase(app);
-
+const googleProvider = new GoogleAuthProvider();
 export {
   auth,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signOut,
   onAuthStateChanged,
-  GoogleAuthProvider,  
+   
   signInWithPopup, 
+  googleProvider,
   database,
   ref,
   set,
