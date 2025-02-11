@@ -7,9 +7,9 @@ import {
   onAuthStateChanged,
   GoogleAuthProvider, 
   signInWithPopup, 
- 
+  
 } from "firebase/auth";
-import { getDatabase, ref, set, get, push, remove ,update, onValue} from "firebase/database";
+import { getDatabase, ref, set, get, push, remove ,update, onValue,} from "firebase/database";
 
 // تكوين Firebase
 const firebaseConfig = {
@@ -42,5 +42,6 @@ export {
   remove,
   update
   ,getAuth 
-  ,onValue
+  ,onValue,
+
 };

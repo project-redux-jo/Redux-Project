@@ -7,6 +7,8 @@ import Contactus from "./components/ContactUs/Contactus"
 // import SignUp from "./components/SignUp/SignUp"
 import LoginPage from "./components/LogIn/Login"
 import SignUp from "./components/SignUp/SignUp"
+import ForgotPassword from "./components/LogIn/ForgotPassword"
+import LoginLord from "./components/LoginLord/LoginLord"
 
 
 
@@ -27,6 +29,8 @@ function App() {
       <Routes>
       <Route path="/signup" element={<SignUp />} />
       <Route path="/login" element={<LoginPage />} />
+      <Route path="/ForgotPassword" element={<ForgotPassword/>} />
+      <Route path="/LoginLord" element={<LoginLord />}/>
     </Routes></Router>
   )
 }
