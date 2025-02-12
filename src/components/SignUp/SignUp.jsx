@@ -285,7 +285,7 @@ const SignUp = () => {
 
     dispatch(signUpUser(formData)).then((result) => {
       if (result.meta.requestStatus === "fulfilled") {
-        navigate("/login");
+        navigate("/LogIn");
       }
     });
   };
@@ -356,7 +356,12 @@ const SignUp = () => {
                 placeholder="Confirm Password"
                 className="w-full px-4 py-2 border rounded-lg"
               />
-
+ <div className="text-start">
+             
+                <a href="/LogIn" className="text-sm text-gray-500 hover:text-green-500">
+                   <span>Already Have an Account?</span>
+                </a>
+              </div>
               <button
                 type="submit"
                 className="w-full py-2 bg-green-500 text-white rounded-lg"
