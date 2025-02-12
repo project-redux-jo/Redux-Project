@@ -7,6 +7,8 @@ import Contactus from "./components/ContactUs/Contactus"
 // import SignUp from "./components/SignUp/SignUp"
 import LoginPage from "./components/LogIn/Login"
 import SignUp from "./components/SignUp/SignUp"
+import Stadiums from "./components/Stadiums/Stadiums"
+import Reservation from "./components/ReservationPage/ReservationPage"
 
 
 
@@ -24,9 +26,14 @@ function App() {
       // </Router>
       // <LoginPage/>
       <Router>
+        <Navbar/>
       <Routes>
       <Route path="/signup" element={<SignUp />} />
+      <Route path="/" element={<Home />} />
+
       <Route path="/login" element={<LoginPage />} />
+      <Route path="/stadiums" element={<Stadiums />} />
+      <Route path="/reservation" element={<Reservation />} />
     </Routes></Router>
   )
 }

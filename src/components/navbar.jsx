@@ -9,10 +9,13 @@ function Navbar() {
             <Link to = "/"><li>Home</li></Link>
             <Link to = "/aboutUs"><li>About us</li></Link>
             <Link to = "/contactUs"><li>Contact us</li></Link>
+            <Link to = "/stadiums"><li>Stadiums</li></Link>
+            <Link to = "/reservation"><li>Reservaition</li></Link>
+            
         </ul>
     </div>
    </nav>
   )
 }
 
-export default Navbar
+export default Navbar;
